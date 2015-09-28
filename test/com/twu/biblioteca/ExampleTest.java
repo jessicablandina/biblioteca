@@ -3,6 +3,7 @@ package com.twu.biblioteca;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 public class ExampleTest {
 
@@ -10,4 +11,5 @@ public class ExampleTest {
     public void test() {
         assertEquals(1, 1);
     }
+
 }
