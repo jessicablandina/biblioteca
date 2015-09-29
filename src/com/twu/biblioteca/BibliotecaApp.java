@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class BibliotecaApp {
 
     static Library library = new Library();
+    static ManageBook manageBook = new ManageBook();
     static Scanner in = new Scanner(System.in);
     static boolean running = true;
 
@@ -21,21 +22,19 @@ public class BibliotecaApp {
 
             switch (answer) {
                 case 0:
-
+                    System.out.println("Thanks for using it! Cya!");
+                    System.exit(0);
                     break;
                 case 1:
 
                     break;
                 case 2:
-                    System.out.println(library.toString());
+                    library.listAllBooks();
                     break;
                 case 3:
-                    ManageBook.addBook();
+                    manageBook.addBook();
                     break;
             }
         }
-
     }
-
-
 }

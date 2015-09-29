@@ -10,7 +10,6 @@ public class ManageBook {
 
     public static void addBook() {
         String title, author, editor, isbn;
-        int numberOfPages;
 
         System.out.println("Enter title: ");
         title = in.next();
@@ -18,16 +17,15 @@ public class ManageBook {
         System.out.println("Enter author: ");
         author = in.next();
 
-        System.out.println("Enter number of pages: ");
-        numberOfPages = in.nextInt();
-
         System.out.println("Enter editor: ");
         editor = in.next();
 
         System.out.println("Enter isbn: ");
         isbn = in.next();
 
-        Book book = new Book(title, author, numberOfPages, editor, isbn);
+        Book book = new Book(title, author, editor, isbn);
+
         library.addBook(book);
+        System.out.println("Book added successfully!");
     }
 }
